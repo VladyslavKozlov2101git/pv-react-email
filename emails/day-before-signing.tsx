@@ -11,6 +11,7 @@ import {
   list_wo_top,
   listItem,
   listTitle,
+  listTitle2,
   main,
   paragraph,
   paragraphBold,
@@ -39,12 +40,12 @@ export const PaymentIsProcessed = () => (
           <strong style={boldSubTitle}>Signing Day Checklist — What to Expect:</strong>
           <br />
           <br />
-          <strong style={listTitle}>✅ Item Delivery:</strong>
+          <strong style={listTitle2}>✅ Item Delivery:</strong>
           <Text style={paragraph}>
             All fan items should have arrived at your chosen address. Please store them safely until
             your signing session.
           </Text>
-          <strong style={listTitle}>💻 Accessing Instructions in Your Portal:</strong>
+          <strong style={listTitle2}>💻 Accessing Instructions in Your Portal:</strong>
           <Text style={paragraph}>
             Tomorrow, log in to your Athlete Portal, go to the Campaigns tab, and click “View
             Details” on your current campaign.
@@ -52,30 +53,31 @@ export const PaymentIsProcessed = () => (
           <Text style={paragraph}>
             This page includes step-by-step signing instructions for each fan order.
           </Text>{' '}
-          <strong style={listTitle}>🔖 Order Details & Stickers:</strong>
+          <strong style={listTitle2}>🔖 Order Details & Stickers:</strong>
           <Text style={paragraph}>
             Each item has a sticker with an Order # — use that number to match the item with its
             corresponding fan request inside your portal.
           </Text>
-          <strong style={listTitle}>🖊 Follow Fan Instructions Carefully:</strong>
+          <strong style={listTitle2}>🖊 Follow Fan Instructions Carefully:</strong>
           <Text style={paragraph}>
             Each order includes specific personalization requests (e.g., “To Sarah,” pen color,
             signature placement).
           </Text>
           <Text style={paragraph}>
-            Please follow these instructions exactly to ensure fan satisfaction.
+            Please follow these instructions exactly to ensure every fan gets the experience they’re
+            expecting.
           </Text>
-          <strong style={listTitle}>✔️ Track Your Progress:</strong>
+          <strong style={listTitle2}>✔️ Track Your Progress:</strong>
           <Text style={paragraph}>
             Mark each item as Complete in your portal once it’s signed. This keeps everything
             organized and ensures nothing gets missed.
           </Text>
-          <strong style={listTitle}>🖋 Pen & Material Guidelines:</strong>
+          <strong style={listTitle2}>🖋 Pen & Material Guidelines:</strong>
           <Text style={paragraph}>
-            All the pen types you’ll need will be included in your shipment. Please use the assigned
-            pens for each item — they’re chosen for the best material compatibility and result.
+            Your shipment includes all the pen types needed for your signing. Use the assigned pen
+            for each item as specified — these were selected for best results.
           </Text>
-          <strong style={listTitle}>📦 After You’re Done:</strong>
+          <strong style={listTitle2}>📦 After You’re Done:</strong>
           <Text style={paragraph}>When you’ve completed all orders:</Text>
           <ul style={list_wo_top}>
             <li style={listItem}>Repack everything carefully in the original boxes</li>

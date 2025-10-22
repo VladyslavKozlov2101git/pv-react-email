@@ -4,6 +4,7 @@ import FooterComponent from './components/FooterComponent';
 import HeadComponent from './components/HeadComponent';
 import {
   boldSubTitle,
+  boldSubTitle2,
   container,
   content,
   greeting,
@@ -11,11 +12,11 @@ import {
   list_wo_top,
   listItem,
   listTitle,
+  listTitle2,
   main,
   paragraph,
   paragraphBold,
 } from './components/styles';
-import Reminder from './components/Reminder';
 import LinkComponent from './components/LinkComponent';
 
 export const SigningDay = () => (
@@ -39,33 +40,33 @@ export const SigningDay = () => (
           <br /> <br />
           <strong style={listTitle}>✅ Access Your Orders:</strong>
           <Text style={paragraph}>Log in to your Athlete Portal to get started:</Text>
-          <LinkComponent text="Access Athlete Portal" href="/test" />
+          <LinkComponent text="Access Athlete Portal" href="http://www.playervault.io/" />
           <ul style={list_wo_top}>
             <li style={listItem}>Click on the Campaigns tab</li>
             <li style={listItem}>Select your active campaign and click “View Details”</li>
             <li style={listItem}>Follow the step-by-step instructions listed for each fan order</li>
           </ul>
-          <strong style={listTitle}>🔖 Match Orders to Items:</strong>
+          <strong style={listTitle2}>🔖 Match Orders to Items:</strong>
           <Text style={paragraph}>
             Each item has a sticker with an Order # — this matches what you’ll see in your portal
             and helps ensure each fan’s request is completed correctly.
           </Text>
-          <strong style={listTitle}>🖊 Follow Fan Instructions Carefully:</strong>
+          <strong style={listTitle2}>🖊 Follow Fan Instructions Carefully:</strong>
           <Text style={paragraph}>
             Please pay close attention to each fan’s personalization details (signature placement,
             pen color, or message). Following these exactly helps deliver the best fan experience.
           </Text>
-          <strong style={listTitle}>✔️ Track Your Progress:</strong>
+          <strong style={listTitle2}>✔️ Track Your Progress:</strong>
           <Text style={paragraph}>
             As you complete each item, mark it as Complete in your portal. This keeps everything
             organized and ensures no order is missed.
           </Text>
-          <strong style={listTitle}>🖋 Use the Provided Pens:</strong>
+          <strong style={listTitle2}>🖋 Use the Provided Pens:</strong>
           <Text style={paragraph}>
             Use the specific pen(s) included in your shipment for each item — these were selected to
             ensure quality and consistency across materials.
           </Text>
-          <strong style={listTitle}>📦 After You’re Done:</strong>
+          <strong style={listTitle2}>📦 After You’re Done:</strong>
           <Text style={paragraph}>When you’ve finished all signings:</Text>
           <ul style={list_wo_top}>
             <li style={listItem}>Repack everything in the original boxes</li>
@@ -75,8 +76,7 @@ export const SigningDay = () => (
             </li>
           </ul>
           <hr style={hr} />
-          <strong style={boldSubTitle}>Need Help?</strong>
-          <br />
+          <strong style={boldSubTitle2}>Need Help?</strong>
           <Text style={paragraph}>
             If you run into any issues or have questions during your signing session,
             <br /> please contact us immediately at{' '}

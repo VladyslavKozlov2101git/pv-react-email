@@ -96,7 +96,7 @@ const styles = {
   },
   totalValue: {
     display: 'table-cell',
-    fontSize: '24px',
+    fontSize: '28px',
     fontWeight: '700' as const,
     color: '#111111',
     margin: 0,

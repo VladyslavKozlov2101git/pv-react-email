@@ -8,8 +8,10 @@ import {
   content,
   greeting,
   hr,
+  list_ordered,
   list_wo_top,
   listItem,
+  listItemOrder,
   listTitle,
   main,
   paragraph,
@@ -40,6 +42,7 @@ export const PaymentIsProcessed = () => (
           <hr style={hr} />
           <strong style={boldSubTitle}>📦 What’s Included:</strong>
           <br />
+          <br />
           <ul style={list_wo_top}>
             <li style={listItem}>All fan-submitted memorabilia that needs to be signed</li>
             <li style={listItem}>
@@ -60,11 +63,15 @@ export const PaymentIsProcessed = () => (
           <LinkComponent text="Access Athlete Portal" href="/test" />
           <Text style={paragraph}>
             From your portal: <br />
-            1. Go to the Campaigns tab <br />
-            2. Click “View Details” for your active campaign <br />
-            3. Review each fan’s instructions, preferred pen color, and signature <br /> placement
-            notes
           </Text>
+          <ol style={list_ordered}>
+            <li style={listItemOrder}> Go to the Campaigns tab</li>
+            <li style={listItemOrder}> Click “View Details” for your active campaign</li>
+            <li style={listItemOrder}>
+              Review each fan’s instructions, preferred pen color, and signature <br />
+              placement notes
+            </li>
+          </ol>
           <hr style={hr} />
           <Reminder />
           <Text style={paragraph}>
@@ -87,8 +94,7 @@ export const PaymentIsProcessed = () => (
           </ul>
           <hr style={hr} />
           <Text style={paragraph}>
-            If you have any questions or issues with your shipment, please reach out to
-            <br /> us at{' '}
+            If you have any questions or issues with your shipment, please reach out to us at{' '}
             <Link style={paragraphBold} href="mailto:support@playervault.io">
               support@playervault.io
             </Link>

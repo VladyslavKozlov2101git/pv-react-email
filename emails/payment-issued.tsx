@@ -8,6 +8,7 @@ import {
   content,
   greeting,
   hr,
+  hr2,
   main,
   paragraph,
   paragraphBold,
@@ -49,8 +50,8 @@ export const SigningDay = () => (
           <Text style={paragraph}>
             You can view payment details and history anytime in your Athlete Portal:
           </Text>
-          <LinkComponent href="www.playervault.io" text="Access Athlete Portal" />
-          <hr style={hr} />
+          <LinkComponent href="https://www.playervault.io/" text="Access Athlete Portal" />
+          <hr style={hr2} />
           <Reminder type="long" />
           <Text style={paragraph}>
             If you have any questions about this payment or future payouts, contact us

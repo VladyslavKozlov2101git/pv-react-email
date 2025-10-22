@@ -27,7 +27,8 @@ export const ShippingLabel = () => (
         <Section style={content}>
           <Text style={greeting}>👋 HI John,</Text>
           <Text style={paragraph}>
-            Great news — your <strong style={paragraphBold}>PlayerVault </strong>
+            Great news — your <strong style={paragraphBold}>PlayerVault autograph order</strong>{' '}
+            {''}
             is ready for the next step!
           </Text>
           <Text style={paragraph}>
@@ -60,7 +61,7 @@ export const ShippingLabel = () => (
               SIGNING_DAY_DATE .
             </li>
           </ul>
-          <strong style={listTitle}>3. Get notified when it’s on its way back:</strong>
+          <strong style={listTitle}>3. Track your order:</strong>
           <ul style={list_wo_top}>
             <li style={listItem}>
               Once dropped off, you can track your item’s status anytime in your Order History

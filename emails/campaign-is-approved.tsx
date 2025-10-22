@@ -35,15 +35,15 @@ export const SigningDay = () => (
           </Text>
           <Text style={paragraph}>
             Fans can now discover, purchase, and participate in your exclusive offerings — whether
-            it’s signed memorabilia, personalized videos, or one-of-a-kind experiences.
+            it’s signed memorabilia, personalized videos, or <br /> one-of-a-kind experiences.
           </Text>{' '}
           <Text style={paragraph}>
             Attached, you’ll find a copy of your Campaign Agreement for your records.
           </Text>
           <hr style={hr} />
-          <strong style={boldSubTitle}>Next Steps::</strong>
+          <strong style={boldSubTitle}>Next Steps:</strong>
           <br /> <br />
-          <strong style={listTitle}>1.View Your Campaign in the Portal:</strong>
+          <strong style={listTitle}>1. View Your Campaign in the Portal:</strong>
           <ul style={list_wo_disc}>
             <li style={listItem}>
               Manage your campaign details, track sales, and view performance insights anytime from
@@ -55,7 +55,7 @@ export const SigningDay = () => (
             type="secondary"
             href="https://playervault.4-com.pro/categories"
           />
-          <strong style={listTitle}>2.Share Your Campaign to Get Early Traction:</strong>
+          <strong style={listTitle}>2. Share Your Campaign to Get Early Traction:</strong>
           <ul style={list_wo_disc}>
             <li style={listItem}>
               Spread the word and drive engagement by sharing your campaign link on your social

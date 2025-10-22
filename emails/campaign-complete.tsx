@@ -37,7 +37,7 @@ export const SigningDay = () => (
           <hr style={hr} />
           <strong style={boldSubTitle}>What To Expect Next:</strong>
           <br /> <br />
-          <strong style={listTitle}>1.Quality Review & Authentication:</strong>
+          <strong style={listTitle}>1. Quality Review & Authentication:</strong>
           <ul style={list_wo_disc}>
             <li style={listItem}>
               Our team will now receive your signed items, verify their quality, and confirm that
@@ -45,7 +45,7 @@ export const SigningDay = () => (
               professional fan experience.
             </li>
           </ul>
-          <strong style={listTitle}>2.Payment Timeline (Net 30):</strong>
+          <strong style={listTitle}>2. Payment Timeline (Net 30):</strong>
           <ul style={list_wo_disc}>
             <li style={listItem}>
               Once all items have passed our quality-assurance review, your payment will be
@@ -53,14 +53,14 @@ export const SigningDay = () => (
               notification by email once your payment has been issued.
             </li>
           </ul>
-          <strong style={listTitle}>3.Verify Your Bank Information:</strong>
+          <strong style={listTitle}>3. Verify Your Bank Information:</strong>
           <ul style={list_wo_disc}>
             <li style={listItem}>
               To avoid any delays, please make sure your bank account information in your Athlete
               Portal is accurate and up-to-date.
             </li>
           </ul>
-          <strong style={listTitle}>4.Complete Your W-9 (Required):</strong>
+          <strong style={listTitle}>4. Complete Your W-9 (Required):</strong>
           <ul style={list_wo_disc}>
             <li style={listItem}>
               If you haven’t already done so, please complete your W-9 tax form. This is required by

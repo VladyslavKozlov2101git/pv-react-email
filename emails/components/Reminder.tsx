@@ -31,6 +31,7 @@ const сontainer = {
   textAlign: 'left' as const,
   width: '520px',
   margin: '0 0 24px',
+  boxSizing: 'border-box' as const,
 };
 
 const title = {

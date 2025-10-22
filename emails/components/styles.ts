@@ -55,11 +55,28 @@ export const boldSubTitle = {
   textTransform: 'uppercase' as const,
 };
 
+export const boldSubTitle2 = {
+  display: 'block',
+  color: '#111',
+  fontFamily: 'Blinker, sans-serif',
+  fontSize: '16px',
+  fontWeight: 700,
+  lineHeight: '24px',
+  letterSpacing: '-0.16px',
+  margin: '0 0 8px',
+  textTransform: 'uppercase' as const,
+};
+
 export const list = {
   padding: '0 0px 0px 16px',
 };
 
 export const list_wo_top = {
+  ...list,
+  marginTop: '0px',
+};
+
+export const list_ordered = {
   ...list,
   marginTop: '0px',
 };
@@ -76,12 +93,27 @@ export const listItem = {
   fontWeight: 400,
   lineHeight: '24px',
   letterSpacing: '-0.16px',
+  margin: '0',
+};
+export const listItemOrder = {
+  color: '#6F6F79',
+  fontFamily: 'Outfit, sans-serif',
+  fontSize: '16px',
+  fontWeight: 400,
+  lineHeight: '24px',
+  letterSpacing: '-0.16px',
+  margin: '0',
 };
 
 export const hr = {
   borderColor: 'black',
   opacity: 0.08,
   margin: '0 0 16px 0',
+};
+export const hr2 = {
+  borderColor: 'black',
+  opacity: 0.08,
+  margin: '0 0 26px 0',
 };
 
 export const listTitle = {
@@ -92,6 +124,17 @@ export const listTitle = {
   lineHeight: '24px',
   letterSpacing: '-0.16px',
   margin: '0 0 -16px 0',
+};
+
+export const listTitle2 = {
+  display: 'block',
+  color: '#111',
+  fontFamily: 'Outfit, sans-serif',
+  fontSize: '16px',
+  fontWeight: 600,
+  lineHeight: '24px',
+  letterSpacing: '-0.16px',
+  margin: '0 0 4px 0',
 };
 
 export const listItemWo = {

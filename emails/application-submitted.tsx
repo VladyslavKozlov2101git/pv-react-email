@@ -43,7 +43,7 @@ export const ApplicationApproved = () => (
           <strong style={boldSubTitle}>What Happens Next:</strong>
           <br />
           <br />
-          <strong style={listTitle}>1.Application Review: </strong>
+          <strong style={listTitle}>1. Application Review: </strong>
           <ul style={list_wo_disc}>
             <li style={listItem}>Our team will review your submission within 1–2 business days.</li>
           </ul>

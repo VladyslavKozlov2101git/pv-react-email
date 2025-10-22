@@ -15,6 +15,7 @@ import {
   paragraph,
   paragraphBold,
 } from './components/styles';
+import LinkComponent from './components/LinkComponent';
 
 export const PaymentIsProcessed = () => (
   <Html>
@@ -39,11 +40,12 @@ export const PaymentIsProcessed = () => (
             You can now sign in and access your Athlete Portal to start setting up your first
             campaign:
           </Text>
+          <LinkComponent text="Access Your Portal" href="http://www.playervault.io/" />
           <hr style={hr} />
           <strong style={boldSubTitle}>What Happens Next:</strong>
           <br />
           <br />
-          <strong style={listTitle}>1.Launch Your First Campaign:</strong>
+          <strong style={listTitle}>1. Launch Your First Campaign:</strong>
           <ul style={list_wo_disc}>
             <li style={listItem}>
               Log into your Athlete Portal to create, customize, and publish your first campaign —

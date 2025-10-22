@@ -9,7 +9,7 @@ type Props = {
 const LinkComponent = ({ text, href, type = 'primary' }: Props) => {
   return (
     <Section style={section}>
-      <Link href={href} style={link}>
+      <Link href={href} style={type === 'primary' ? link : linkSecondary}>
         <Text style={type === 'primary' ? linkTextPrimary : linkTextSecondary}>{text}</Text>
       </Link>
     </Section>
@@ -35,6 +35,17 @@ const link = {
   boxSizing: 'content-box' as const,
 };
 
+const linkSecondary = {
+  textDecoration: 'none',
+  display: 'inline-block',
+  padding: '11px 0px',
+  borderRadius: '12px',
+  width: '100%',
+  margin: '0 0 8px 0',
+  heigh: '48px' as const,
+  boxSizing: 'content-box' as const,
+};
+
 const linkTextPrimary = {
   ...link,
   backgroundColor: '#FF6F5C',
@@ -50,7 +61,7 @@ const linkTextPrimary = {
 };
 
 const linkTextSecondary = {
-  ...link,
+  ...linkSecondary,
   backgroundColor: '#F6F6F8',
   border: '1px solid var(--Border-Light, rgba(0, 0, 0, 0.08))',
   color: '#111',
@@ -61,4 +72,6 @@ const linkTextSecondary = {
   lineHeight: '24px',
   letterSpacing: '-0.16px',
   textTransform: 'uppercase' as const,
+  width: ' 520px',
+  boxSizing: 'border-box' as const,
 };

@@ -50,15 +50,15 @@ export const PaymentIsProcessed = () => (
             and ready for Signing Day.
           </Text>
           <hr style={hr} />
-          <strong style={boldSubTitle}>Signing Day Checklist — What to Expect:</strong>
+          <strong style={boldSubTitle}>Signing Day Checklist — What to Expect :</strong>
           <br />
           <br />
-          <strong style={listTitle}>✅ Item Delivery:</strong>
+          <strong style={listTitle}>✅ Item Delivery:</strong> <br />
           <Text style={paragraph}>
             All fan items are being sent to your chosen address 10–3 days before your Signing Day.
             Once they arrive, please store them safely until your session begins.
           </Text>
-          <strong style={listTitle}>💻 Accessing Instructions in Your Portal:</strong>
+          <strong style={listTitle}>💻 Accessing Instructions in Your Portal:</strong> <br />
           <Text style={paragraph}>
             On Signing Day, log in to your Athlete Portal, go to the Campaigns tab, and click “View
             Details” on your current campaign.
@@ -66,12 +66,12 @@ export const PaymentIsProcessed = () => (
           <Text style={paragraph}>
             This page includes step-by-step signing instructions for each fan order.
           </Text>{' '}
-          <strong style={listTitle}>🔖 Order Details & Stickers:</strong>
+          <strong style={listTitle}>🔖 Order Details & Stickers:</strong> <br />
           <Text style={paragraph}>
             Each item will have a sticker with an Order # — use that number to match the item with
             its corresponding fan request inside your portal.
           </Text>
-          <strong style={listTitle}>🖊 Follow Fan Instructions Carefully:</strong>
+          <strong style={listTitle}>🖊 Follow Fan Instructions Carefully:</strong> <br />
           <Text style={paragraph}>
             Each order includes specific personalization requests (e.g., “To John,” pen color,
             signature placement).
@@ -79,17 +79,17 @@ export const PaymentIsProcessed = () => (
           <Text style={paragraph}>
             Please follow these instructions exactly to ensure fan satisfaction.
           </Text>
-          <strong style={listTitle}>✔️ Track Your Progress:</strong>
+          <strong style={listTitle}>✔️ Track Your Progress:</strong> <br />
           <Text style={paragraph}>
             Mark each item as Complete in your portal once it’s signed. This keeps everything
             organized and ensures every fan gets their signed item.
           </Text>
-          <strong style={listTitle}>🖋 Pen & Material Guidelines:</strong>
+          <strong style={listTitle}>🖋 Pen & Material Guidelines:</strong> <br />
           <Text style={paragraph}>
             All the pen types you’ll need will be included in your shipment. Please use the assigned
             pens for each item — they’re chosen for the best material compatibility and result.
           </Text>
-          <strong style={listTitle}>📦 After You’re Done:</strong>
+          <strong style={listTitle}>📦 After You’re Done:</strong> <br />
           <Text style={paragraph}>Once all items are signed:</Text>
           <ul style={list_wo_top}>
             <li style={listItem}>Repack them carefully in their original boxes</li>
@@ -100,7 +100,7 @@ export const PaymentIsProcessed = () => (
           <Reminder />
           <Text style={paragraph}>
             If you have any questions or potential conflicts, please reach out right away
-            <br /> at
+            <br /> at{' '}
             <Link style={paragraphBold} href="mailto:support@playervault.io">
               support@playervault.io
             </Link>

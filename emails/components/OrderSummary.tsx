@@ -4,7 +4,6 @@ import * as React from 'react';
 const OrderSummary = () => {
   return (
     <Section style={styles.container}>
-      {/* === Top Row === */}
       <table style={styles.table} cellPadding="0" cellSpacing="0" width="100%">
         <tbody>
           <tr>
@@ -21,7 +20,6 @@ const OrderSummary = () => {
 
       <Hr style={styles.hr} />
 
-      {/* === Items === */}
       <table style={styles.table} cellPadding="0" cellSpacing="0" width="100%">
         <tbody>
           <tr>
@@ -69,8 +67,8 @@ const styles = {
     borderCollapse: 'collapse' as const,
   },
   mainTitle: {
-    fontSize: '18px',
-    fontWeight: 700,
+    fontSize: '16px',
+    fontWeight: 600,
     color: '#111111',
     margin: 0,
     lineHeight: '1.4',
@@ -83,8 +81,8 @@ const styles = {
     paddingBottom: '4px',
   },
   mainPrice: {
-    fontSize: '18px',
-    fontWeight: 700,
+    fontSize: '16px',
+    fontWeight: 600,
     color: '#111111',
     margin: 0,
     lineHeight: '1.4',

@@ -21,7 +21,7 @@ import OrderSummary from './components/OrderSummary';
 export const PaymentIsProcessed = () => (
   <Html>
     <HeadComponent />
-    <Preview>Confirmation code</Preview>
+    <Preview>Payment is processed and order is confirmed</Preview>
     <Body style={main}>
       <Container style={container}>
         <HeaderComponent />
@@ -55,9 +55,10 @@ export const PaymentIsProcessed = () => (
               your shipping label and/or instructions for how to send us your memorabilia item.
               <br />
               Once your item has been sent, you can{' '}
-              <strong style={paragraphBold}>track its status</strong> anytime from your Order
-              History page in your account settings.
+              <strong style={paragraphBold}>track its status</strong> anytime from your{' '}
+              <strong style={paragraphBold}> Order History</strong> page in your account settings.
             </li>
+            <br />
             <li style={listItem}>
               <strong style={listTitle}>For Digital Services (e.g., Personalized Videos):</strong>
               <br />
