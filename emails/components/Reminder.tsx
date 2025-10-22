@@ -1,11 +1,21 @@
-import { greeting, paragraph, paragraphBold } from './styles';
-import { Body, Container, Html, Preview, Section, Text, Link } from '@react-email/components';
-const Reminder = () => {
+import { paragraph, paragraphBold } from './styles';
+import { Text } from '@react-email/components';
+const Reminder = ({ type = 'short' }: { type?: 'long' | 'short' }) => {
   return (
     <div style={сontainer}>
       <Text style={title}>📢 Reminder</Text>
       <Text style={paragraph}>
-        Your Signing Day is scheduled for <strong style={paragraphBold}>Aug 1, 2025.</strong>
+        {type === 'short' ? (
+          <>
+            Your Signing Day is scheduled for <strong style={paragraphBold}>Aug 1, 2025.</strong>
+          </>
+        ) : (
+          <>
+            Please make sure your <strong style={paragraphBold}>bank information</strong> and{' '}
+            <strong style={paragraphBold}> W-9 </strong> remain up-to-date in your portal to prevent
+            any future payment delays.
+          </>
+        )}
       </Text>
     </div>
   );
