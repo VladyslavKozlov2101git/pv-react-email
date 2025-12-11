@@ -1,4 +1,4 @@
-import { Link, Section, Text } from '@react-email/components';
+import { Link, Section, Text, Img } from '@react-email/components';
 
 type Props = {
   text: string;
@@ -7,6 +7,9 @@ type Props = {
 };
 
 const LinkComponent = ({ text, href, type = 'primary' }: Props) => {
+  const isApprovedIcon = 'https://theantiquecollector.4-com.pro/approved.png';
+  const isDeclinedIcon = 'https://theantiquecollector.4-com.pro/declined.png';
+
   return (
     <Section style={section}>
       <Link
@@ -20,6 +23,12 @@ const LinkComponent = ({ text, href, type = 'primary' }: Props) => {
                 ? linkApproved
                 : linkDeclined
         }>
+        {type === 'approved' && (
+          <Img style={{ marginRight: '2px' }} src={isApprovedIcon} alt="Approved" />
+        )}
+        {type === 'declined' && (
+          <Img style={{ marginRight: '2px' }} src={isDeclinedIcon} alt="Declined" />
+        )}
         <Text
           style={
             type === 'primary'
@@ -41,22 +50,18 @@ export default LinkComponent;
 
 const section = {
   textAlign: 'center' as const,
-  margin: '0',
   width: '520px',
+  margin: '16px 0px',
 };
-
-/* ---------------- PRIMARY ---------------- */
 
 const linkPrimary = {
   textDecoration: 'none',
   display: 'flex',
   height: '48px',
-  padding: '16px 0 14px 0',
   justifyContent: 'center',
   alignItems: 'center',
   gap: '8px',
   width: '100%',
-  borderRadius: '12px',
   background: '#0D0106',
 };
 
@@ -70,8 +75,6 @@ const textPrimary = {
   textTransform: 'uppercase' as const,
 };
 
-/* ---------------- SECONDARY ---------------- */
-
 const linkSecondary = {
   textDecoration: 'none',
   display: 'flex',
@@ -80,7 +83,6 @@ const linkSecondary = {
   justifyContent: 'center',
   alignItems: 'center',
   width: '100%',
-  borderRadius: '12px',
   backgroundColor: '#F6F6F8',
   border: '1px solid rgba(0, 0, 0, 0.08)',
 };
@@ -90,21 +92,17 @@ const textSecondary = {
   fontFamily: 'Blinker, sans-serif',
   fontSize: '16px',
   fontWeight: 700,
-  lineHeight: '24px',
+  lineHeight: '14px',
   letterSpacing: '-0.16px',
   textTransform: 'uppercase' as const,
 };
 
-/* ---------------- APPROVED ---------------- */
-
 const linkApproved = {
   textDecoration: 'none',
   display: 'flex',
-  padding: '12px 0',
   justifyContent: 'center',
   alignItems: 'center',
   width: '100%',
-  borderRadius: '12px',
   background: 'rgba(24,143,0,0.16)',
 };
 
@@ -117,16 +115,12 @@ const textApproved = {
   textTransform: 'uppercase' as const,
 };
 
-/* ---------------- DECLINED ---------------- */
-
 const linkDeclined = {
   textDecoration: 'none',
   display: 'flex',
-  padding: '12px 0',
   justifyContent: 'center',
   alignItems: 'center',
   width: '100%',
-  borderRadius: '12px',
   background: 'rgba(255,44,32,0.16)',
 };
 
