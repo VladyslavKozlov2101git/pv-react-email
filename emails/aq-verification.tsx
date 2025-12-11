@@ -26,9 +26,11 @@ export const Verification = () => (
             If you didn't request this, please ignore this email or let us know.
           </Text>
           <br />
-          <Text style={text}>Thank you,</Text>
-          <br />
-          <Text style={textBold}>The Antique Collector</Text>
+          <Section>
+            <Text style={text}>Thank you,</Text>
+            <span style={{ height: '8px', display: 'block' }}></span>
+            <Text style={textBold}>The Antique Collector</Text>
+          </Section>
         </Section>
         <FooterComponent />
       </Container>

@@ -59,9 +59,11 @@ export const WelcomeToTheAntique = () => (
           </Text>
 
           <br />
-          <Text style={text}>Thank you for joining !</Text>
-          <br />
-          <Text style={textBold}>The Antique Collector</Text>
+          <Section>
+            <Text style={text}>Thank you for joining !</Text>
+            <span style={{ height: '8px', display: 'block' }}></span>
+            <Text style={textBold}>The Antique Collector</Text>
+          </Section>
         </Section>
         <FooterComponent />
       </Container>

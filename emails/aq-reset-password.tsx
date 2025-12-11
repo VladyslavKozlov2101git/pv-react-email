@@ -40,8 +40,11 @@ export const ResetPassword = () => (
             you can delete this email.
           </Text>
           <br />
-          <Text style={text}>Cheers,</Text> <br />
-          <Text style={textBold}>The Antique Collector</Text>
+          <Section>
+            <Text style={text}>Cheers,</Text>
+            <span style={{ height: '8px', display: 'block' }}></span>
+            <Text style={textBold}>The Antique Collector</Text>
+          </Section>
         </Section>
         <FooterComponent />
       </Container>
