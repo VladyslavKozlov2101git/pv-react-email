@@ -4,7 +4,15 @@ import FooterComponent from './aq-components/FooterComponent';
 import HeadComponent from './aq-components/HeadComponent';
 import ItemsGrid from './aq-components/ItemsGrid';
 
-import { container, content, main, text, greeting, textBold } from './aq-components/styles';
+import {
+  container,
+  content,
+  main,
+  text,
+  greeting,
+  textBold,
+  greetingItalic,
+} from './aq-components/styles';
 
 export const WelcomeToTheAntique = () => (
   <Html>
@@ -16,7 +24,7 @@ export const WelcomeToTheAntique = () => (
         <HeaderComponent />
         <Section style={content}>
           <Text style={greeting}>Welcome to ,</Text>
-          <Text style={greeting}>The Antique Collector</Text>
+          <Text style={greetingItalic}>The Antique Collector</Text>
           <br />
           <Text style={text}>
             The new and exciting global platform where potential buyers can interact with the

@@ -3,40 +3,11 @@ import { Font, Head } from '@react-email/components';
 const HeadComponent = () => {
   return (
     <Head>
-      {/* Playfair Display Regular 400 */}
-      <Font
-        fontFamily="Playfair Display"
-        fallbackFontFamily="Georgia"
-        webFont={{
-          url: 'https://fonts.gstatic.com/s/playfairdisplay/v30/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYh1I.woff2',
-          format: 'woff2',
-        }}
-        fontWeight={400}
-        fontStyle="normal"
-      />
-
-      {/* Playfair Display SemiBold 600 */}
-      <Font
-        fontFamily="Playfair Display"
-        fallbackFontFamily="Georgia"
-        webFont={{
-          url: 'https://fonts.gstatic.com/s/playfairdisplay/v30/nuFkD-vYSZviVYUb_rj3ij__anPXAPbPjWz3.woff2',
-          format: 'woff2',
-        }}
-        fontWeight={600}
-        fontStyle="normal"
-      />
-
-      {/* Playfair Display Bold 700 */}
-      <Font
-        fontFamily="Playfair Display"
-        fallbackFontFamily="Georgia"
-        webFont={{
-          url: 'https://fonts.gstatic.com/s/playfairdisplay/v30/nuFkD-vYSZviVYUb_rj3ij__anPXAKLPjWz3.woff2',
-          format: 'woff2',
-        }}
-        fontWeight={700}
-        fontStyle="normal"
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet"
       />
 
       {/* Open Sans Regular */}
