@@ -16,15 +16,11 @@ export const Verification = () => (
         <Section style={content}>
           <Text style={greeting}>Welcome</Text>
           <br />
-          <Text style={text}>
-            Please use the verification code below on The Antique Collector app:
-          </Text>
+          <Text style={text}>Here is your verification code:</Text>
 
           <VerCode code="5352" />
 
-          <Text style={text}>
-            If you didn't request this, please ignore this email or let us know.
-          </Text>
+          <Text style={text}>This code will be valid for 30 minutes.</Text>
           <br />
           <Section>
             <Text style={text}>Thank you,</Text>

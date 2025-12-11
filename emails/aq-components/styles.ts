@@ -5,10 +5,11 @@ export const container = {
   backgroundColor: '#ffffff',
 };
 export const text = {
-  fontSize: '14px',
+  fontSize: '16px',
   color: '#706F6A',
   margin: '0',
   lineHeight: '20px',
+
   letterSpacing: '-0.28px',
 };
 export const textBold = {
@@ -22,7 +23,7 @@ export const textBold = {
 
 export const main = {
   backgroundColor: '#f0f2f5',
-  fontFamily: 'Outfit, sans-serif',
+  fontFamily: '"Open Sans", sans-serif',
 };
 
 export const content = {

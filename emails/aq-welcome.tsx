@@ -23,31 +23,22 @@ export const WelcomeToTheAntique = () => (
       <Container style={container}>
         <HeaderComponent />
         <Section style={content}>
-          <Text style={greeting}>Welcome to ,</Text>
+          <Text style={greeting}>Welcome to,</Text>
           <Text style={greetingItalic}>The Antique Collector</Text>
           <br />
           <Text style={text}>
-            The new and exciting global platform where potential buyers can interact with the
-            world's premiere antique dealers, and peruse and buy their latest stock.
+            A new and exciting global marketplace that connects potential buyers with top antique
+            dealers, offering the best way to discover their latest pieces.
           </Text>
           <br />
 
           <Text style={text}>
             Once you have created your account it is important to follow your favorite sellers so
             that you see their latest posts. Engagement is important, so be sure to like items,
-            browse shops and message dealers on the app.
+            browse shops and message dealers.
           </Text>
           <br />
           <ItemsGrid />
-
-          <br />
-
-          <Text style={text}>
-            If you need help finding your way around the app, please go to our <br /> website{' '}
-            <Link style={textBold} href="https://www.the-antiquecollector.com">
-              www.the-antiquecollector.com
-            </Link>
-          </Text>
 
           <br />
 

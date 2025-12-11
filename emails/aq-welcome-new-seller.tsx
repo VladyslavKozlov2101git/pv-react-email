@@ -15,56 +15,66 @@ import {
 export const WelcomeNewSeller = () => (
   <Html>
     <HeadComponent />
-    <Preview>Welcome, Dear New Seller</Preview>
+    <Preview>Welcome, Dear Seller!</Preview>
 
     <Body style={main}>
       <Container style={container}>
         <HeaderComponent />
         <Section style={content}>
           <Text style={greeting}>Welcome,</Text>
-          <Text style={greetingItalic}>Dear New Seller</Text>
+          <Text style={greetingItalic}>Dear Seller!</Text>
           <br />
           <Text style={text}>
-            Thank you for signing up for a professional account on the Antique Collector.
+            Thank you for joining The Antique Collector with your new professional account.
           </Text>
           <br />
           <Text style={text}>
-            We are pleased to offer you a custom platform to connect with buyers, meet with other
-            dealers, showcase your items and to benefit from no commission off site transactions. We
-            don't collect your data, we give you freedom to transact with your customers as you
-            desire as well as access to a worldwide community of antique enthusiasts. In a short
-            period of time, we have expanded and improved our app, promising you an even better
-            experience.
+            We’re delighted to have you on board and to offer you a dedicated platform where you can
+            connect with buyers, network with fellow dealers, and showcase your collection — all
+            with no commission fees and complete freedom to manage your own transactions.
           </Text>
           <br />
           <Text style={text}>
-            We are offering early adopters free membership as well as features in our app
-            promotional advertising on Instagram, in our weekly email updates and in our ads printed
-            in traditional publications such as the <span style={textBold}>Antiques Gazette</span>,{' '}
-            <span style={textBold}>the Magazine Antiques</span> and{' '}
-            <span style={textBold}>the World of Interiors</span>.
+            Your privacy is important to us: we don’t collect your data. Instead, we empower you to
+            engage directly with your customers and be part of a global community of antique
+            enthusiasts.
           </Text>
           <br />
           <Text style={text}>
-            In exchange, we ask you to posts 3 times a week with new and exciting items and to
-            actively engage on the app by following, liking and commenting. It is important to
-            follow other sellers so that you see their latest posts and to encourage your customers
-            to join you on the app. Referrals of other dealers is most appreciated, the more your
-            refer others to the app, the more you will be featured in our advertising.
+            As a valued dealer, you’ll also enjoy access to our latest features:
           </Text>
           <br />
           <Text style={text}>
-            We are a new community created as a result of dissatisfaction with other platforms and
-            spaces.
+            <span style={textBold}>Live Presentations</span> – Showcase your newest pieces, chat
+            with your audience, and sell directly in real time.
           </Text>
           <br />
           <Text style={text}>
-            We're growing everyday with almost 200 sellers and nearly 2000 users in just over a few
-            short months. We look forward to seeing you on the app!
+            <span style={textBold}>Two Feeds</span> – One for all members, and another exclusively
+            for the trade, making it easy to discover and purchase items B2B.
           </Text>
-
           <br />
-          <Text style={textBold}>The Antique Collector</Text>
+          <Text style={text}>In addition, The Antique Collector offers:</Text>
+          <Text style={text}>Chat forums for discussion and advice</Text>
+          <Text style={text}>An educational blog</Text>
+          <Text style={text}>A diary of antique fairs and events</Text>
+          <br />
+          <Text style={text}>
+            Now in our third year, we’re thrilled to continue growing and have many exciting updates
+            coming soon.
+          </Text>
+          <br />
+          <Text style={text}>
+            And don’t forget — you can upgrade your account anytime to unlock even more
+            opportunities.
+          </Text>
+          <br />
+          <Text style={text}>
+            We look forward to seeing you on the app and sharing in your success!
+          </Text>
+          <br />
+          <Text style={text}>Warm regards,</Text>
+          <Text style={textBold}>The Antique Collector Team</Text>
         </Section>
         <FooterComponent />
       </Container>

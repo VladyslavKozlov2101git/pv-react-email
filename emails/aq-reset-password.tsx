@@ -41,7 +41,7 @@ export const ResetPassword = () => (
           </Text>
           <br />
           <Section>
-            <Text style={text}>Cheers,</Text>
+            <Text style={text}>Thank you,</Text>
             <span style={{ height: '8px', display: 'block' }}></span>
             <Text style={textBold}>The Antique Collector</Text>
           </Section>
