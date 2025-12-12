@@ -23,7 +23,7 @@ export const WelcomeToTheAntique = () => (
       <Container style={container}>
         <HeaderComponent />
         <Section style={content}>
-          <Text style={greeting}>Welcome to,</Text>
+          <Text style={greeting}>Welcome to</Text>
           <Text style={greetingItalic}>The Antique Collector</Text>
           <br />
           <Text style={text}>
