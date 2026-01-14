@@ -3,35 +3,14 @@ import { Link, Section, Text } from '@react-email/components';
 type Props = {
   text: string;
   href: string;
-  type?: 'primary' | 'secondary' | 'approved' | 'declined';
+  type?: 'secondary' | 'primary';
 };
 
 const LinkComponent = ({ text, href, type = 'primary' }: Props) => {
   return (
     <Section style={section}>
-      <Link
-        href={href}
-        style={
-          type === 'primary'
-            ? linkPrimary
-            : type === 'secondary'
-              ? linkSecondary
-              : type === 'approved'
-                ? linkApproved
-                : linkDeclined
-        }>
-        <Text
-          style={
-            type === 'primary'
-              ? textPrimary
-              : type === 'secondary'
-                ? textSecondary
-                : type === 'approved'
-                  ? textApproved
-                  : textDeclined
-          }>
-          {text}
-        </Text>
+      <Link href={href} style={link}>
+        <Text style={type === 'primary' ? linkTextPrimary : linkTextSecondary}>{text}</Text>
       </Link>
     </Section>
   );
@@ -45,96 +24,41 @@ const section = {
   width: '520px',
 };
 
-/* ---------------- PRIMARY ---------------- */
-
-const linkPrimary = {
+const link = {
   textDecoration: 'none',
-  display: 'flex',
-  height: '48px',
-  padding: '16px 0 14px 0',
-  justifyContent: 'center',
-  alignItems: 'center',
-  gap: '8px',
-  width: '100%',
+  display: 'inline-block',
+  padding: '12px 0px',
   borderRadius: '12px',
-  background: '#0D0106',
+  width: '100%',
+  margin: '0 0 8px 0',
+  heigh: '48px' as const,
+  boxSizing: 'content-box' as const,
 };
 
-const textPrimary = {
+const linkTextPrimary = {
+  ...link,
+  backgroundColor: '#FF6F5C',
   color: '#FFF',
-  fontFamily: 'Open Sans, sans-serif',
-  fontSize: '12px',
-  fontWeight: 400,
-  lineHeight: '14px',
-  letterSpacing: '0.6px',
-  textTransform: 'uppercase' as const,
-};
-
-/* ---------------- SECONDARY ---------------- */
-
-const linkSecondary = {
-  textDecoration: 'none',
-  display: 'flex',
-  height: '48px',
-  padding: '11px 0',
-  justifyContent: 'center',
-  alignItems: 'center',
-  width: '100%',
-  borderRadius: '12px',
-  backgroundColor: '#F6F6F8',
-  border: '1px solid rgba(0, 0, 0, 0.08)',
-};
-
-const textSecondary = {
-  color: '#111',
   fontFamily: 'Blinker, sans-serif',
   fontSize: '16px',
+  fontStyle: 'normal' as const,
   fontWeight: 700,
   lineHeight: '24px',
   letterSpacing: '-0.16px',
   textTransform: 'uppercase' as const,
+  border: 'none',
 };
 
-/* ---------------- APPROVED ---------------- */
-
-const linkApproved = {
-  textDecoration: 'none',
-  display: 'flex',
-  padding: '12px 0',
-  justifyContent: 'center',
-  alignItems: 'center',
-  width: '100%',
-  borderRadius: '12px',
-  background: 'rgba(24,143,0,0.16)',
-};
-
-const textApproved = {
-  color: '#188F00',
-  fontFamily: 'Open Sans, sans-serif',
-  fontSize: '14px',
-  fontWeight: 600,
-  letterSpacing: '0.7px',
-  textTransform: 'uppercase' as const,
-};
-
-/* ---------------- DECLINED ---------------- */
-
-const linkDeclined = {
-  textDecoration: 'none',
-  display: 'flex',
-  padding: '12px 0',
-  justifyContent: 'center',
-  alignItems: 'center',
-  width: '100%',
-  borderRadius: '12px',
-  background: 'rgba(255,44,32,0.16)',
-};
-
-const textDeclined = {
-  color: '#FF2C20',
-  fontFamily: 'Open Sans, sans-serif',
-  fontSize: '14px',
-  fontWeight: 600,
-  letterSpacing: '0.7px',
+const linkTextSecondary = {
+  ...link,
+  backgroundColor: '#F6F6F8',
+  border: '1px solid var(--Border-Light, rgba(0, 0, 0, 0.08))',
+  color: '#111',
+  fontFamily: 'Blinker, sans-serif',
+  fontSize: '16px',
+  fontStyle: 'normal' as const,
+  fontWeight: 700,
+  lineHeight: '24px',
+  letterSpacing: '-0.16px',
   textTransform: 'uppercase' as const,
 };
