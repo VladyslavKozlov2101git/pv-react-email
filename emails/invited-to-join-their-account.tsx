@@ -33,10 +33,11 @@ export const PaymentIsProcessed = () => (
             To complete your account setup and receive approval, there are two quick steps you’ll
             need to take:
           </Text>
-          <strong style={listTitle}>1. Create your PlayerVault password</strong>
-          <br />
-          <strong style={listTitle}>2. Review and sign your Player Agreement</strong>
-          <br />
+          <div style={{ padding: '0 0 0 8px' }}>
+            <strong style={listTitle}>1. Create your PlayerVault password</strong>
+            <br />
+            <strong style={listTitle}>2. Review and sign your Player Agreement</strong>
+          </div>
           <br />
           <Text style={{ ...paragraph, letterSpacing: '-0.18px' }}>
             Once completed, our team will review your account and notify both you and your manager
@@ -53,7 +54,7 @@ export const PaymentIsProcessed = () => (
           <br />
 
           <Text style={{ ...paragraph, marginBottom: '24px', letterSpacing: '-0.18px' }}>
-            If you have any questions or need assistance, please reach out to us at
+            If you have any questions along the way, feel free to reach out to us at
             <br />
             <Link style={paragraphBold} href="mailto:support@playervault.io">
               support@playervault.io

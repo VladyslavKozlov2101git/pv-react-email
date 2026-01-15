@@ -11,6 +11,7 @@ import {
   paragraphBold,
   hr,
 } from './components/styles';
+import LinkComponent from './components/LinkComponent';
 
 export const MechandiseWithAutograph = () => (
   <Html>
@@ -30,6 +31,8 @@ export const MechandiseWithAutograph = () => (
             its journey and is now in your hands. We hope it brings you as much excitement as the
             athlete had signing it.
           </Text>
+
+          <LinkComponent href="/" text="Share Your Feedback" />
 
           <hr style={hr} />
 

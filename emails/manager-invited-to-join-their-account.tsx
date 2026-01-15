@@ -31,12 +31,15 @@ export const PaymentIsProcessed = () => (
             activity.
           </Text>
           <Text style={paragraph}>To get access, you’ll just need to:</Text>
-          <strong style={listTitle}>
-            1. Accept the invitation to join [Athlete Name]’s account
-          </strong>
-          <br />
-          <strong style={listTitle}>2. Create your PlayerVault password</strong>
-          <br />
+
+          <div style={{ padding: '0 0 0 8px' }}>
+            <strong style={listTitle}>
+              1. Accept the invitation to join [Athlete Name]’s account
+            </strong>
+            <br />
+            <strong style={listTitle}>2. Create your PlayerVault password</strong>
+          </div>
+
           <br />
           <Text style={{ ...paragraph, letterSpacing: '-0.18px' }}>
             Once completed, you’ll be able to collaborate on campaign setup, management, and

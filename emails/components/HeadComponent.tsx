@@ -1,47 +1,13 @@
-import { Font, Head } from '@react-email/components';
+import { Head } from '@react-email/components';
 
 const HeadComponent = () => {
   return (
     <Head>
-      <Font
-        fontFamily="Outfit"
-        fallbackFontFamily="Helvetica"
-        webFont={{
-          url: 'https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NJtEtq.woff2',
-          format: 'woff2',
-        }}
-        fontWeight={400}
-        fontStyle="normal"
-      />
-      <Font
-        fontFamily="Outfit"
-        fallbackFontFamily="Helvetica"
-        webFont={{
-          url: 'https://fonts.gstatic.com/s/outfit/v11/QGYsz_MVcBeNP4NJtFtqfr1d.woff2',
-          format: 'woff2',
-        }}
-        fontWeight={500}
-        fontStyle="normal"
-      />
-      <Font
-        fontFamily="Outfit"
-        fallbackFontFamily="Helvetica"
-        webFont={{
-          url: 'https://fonts.gstatic.com/s/outfit/v11/QGYsz_MVcBeNP4NJtFtqfqt-d_8.woff2',
-          format: 'woff2',
-        }}
-        fontWeight={600}
-        fontStyle="normal"
-      />
-      <Font
-        fontFamily="Blinker"
-        fallbackFontFamily="Arial"
-        webFont={{
-          url: 'https://fonts.gstatic.com/s/blinker/v14/cIf_MaFatEE-VTa4_F8.woff2',
-          format: 'woff2',
-        }}
-        fontWeight={700}
-        fontStyle="normal"
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Blinker:wght@700&family=Outfit:wght@400;500;600&display=swap"
+        rel="stylesheet"
       />
     </Head>
   );

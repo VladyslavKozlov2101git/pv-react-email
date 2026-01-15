@@ -51,7 +51,7 @@ export const boldSubTitle = {
   fontSize: '16px',
   fontWeight: 700,
   lineHeight: '24px',
-  letterSpacing: '-1px',
+  letterSpacing: '-0.16px',
   margin: '0 0 16px',
   textTransform: 'uppercase' as const,
 };
