@@ -37,7 +37,7 @@ export const MechandiseWithAutograph = () => (
 
           <Text style={paragraph}>
             If you have any questions in the meantime, feel free to reach out to us at
-            <br /> at{' '}
+            <br /> 
             <Link style={paragraphBold} href="mailto:support@playervault.io">
               support@playervault.io
             </Link>
