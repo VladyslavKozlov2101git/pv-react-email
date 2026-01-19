@@ -26,10 +26,11 @@ export const MechandiseWithAutograph = () => (
             It’s here — your <strong style={paragraphBold}>PlayerVault </strong> order has
             officially arrived! 🎉
           </Text>
-          <Text style={paragraph}>
-            Your item, signed by <strong style={paragraphBold}>Keon Coleman</strong>, has completed
-            its journey and is now in your hands. We hope it brings you as much excitement as the
-            athlete had signing it.
+          <Text style={{ ...paragraph, letterSpacing: '-0.40px' }}>
+            Your item, signed by{' '}
+            <strong style={{ ...paragraphBold, letterSpacing: '-0.40px' }}>Keon Coleman</strong>,
+            has completed its journey and is now in your hands. We hope it brings you as much
+            excitement as the athlete had signing it.
           </Text>
 
           <LinkComponent href="/" text="Share Your Feedback" />
