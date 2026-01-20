@@ -33,7 +33,10 @@ export const MechandiseWithAutograph = () => (
             excitement as the athlete had signing it.
           </Text>
 
-          <LinkComponent href="/" text="Share Your Feedback" />
+          <LinkComponent
+            href="https://playervault.4-com.pro/?show_popup=contact_us"
+            text="Share Your Feedback"
+          />
 
           <hr style={hr} />
 
