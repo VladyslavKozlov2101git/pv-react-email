@@ -11,6 +11,7 @@ import {
   list_wo_top,
   listItem,
   listTitle,
+  listTitle2,
   main,
   paragraph,
   paragraphBold,
@@ -44,32 +45,43 @@ export const PaymentIsProcessed = () => (
             You can view your full order details anytime in your Order History page.
           </Text>
           <hr style={hr} />
-          <strong style={boldSubTitle}>What Happens Next:</strong>
+          <strong style={boldSubTitle}>WHAT HAPPENS NEXT:</strong>
           <br />
           <br />
           <ul style={list_wo_top}>
             <li style={listItem}>
-              <strong style={listTitle}>For Autograph Orders:</strong>
-              <br />
-              You’ll receive a <strong style={paragraphBold}>separate email shortly</strong> with
-              your shipping label and/or instructions for how to send us your memorabilia item.
-              <br />
-              Once your item has been sent, you can{' '}
-              <strong style={paragraphBold}>track its status</strong> anytime from your{' '}
-              <strong style={paragraphBold}> Order History</strong> page in your account settings.
+              <strong style={listTitle2}>For Autograph Orders:</strong>
+              <span style={{ display: 'block' }}>
+                <strong style={paragraphBold}>
+                  - If you ordered the item from our retail partner:
+                </strong>{' '}
+                Your item will be provided by our retail partner. No action is required from you.
+              </span>
+              <span style={{ display: 'block' }}>
+                <strong style={paragraphBold}>- If you chose your own item for signing:</strong>{' '}
+                You’ll receive a <strong style={paragraphBold}>separate email shortly</strong> with
+                your shipping label and/or instructions for how to send us your memorabilia item.
+              </span>
+              <span style={{ display: 'block', marginTop: '4px' }}>
+                Once your item has been sent, you can{' '}
+                <strong style={paragraphBold}>track its status</strong> anytime from your{' '}
+                <strong style={paragraphBold}>Order History</strong> page in your account settings.
+              </span>
             </li>
             <br />
             <li style={listItem}>
-              <strong style={listTitle}>For Digital Services (e.g., Personalized Videos):</strong>
-              <br />
-              You’ll receive an email once your athlete has recorded your video during their signing
-              day window — we’ll include a <strong style={paragraphBold}>download link</strong> to
-              your personalized video in that email.
+              <strong style={listTitle2}>For Digital Services (e.g., Personalized Videos):</strong>
+              <span>
+                You’ll receive an email once your athlete has recorded your video during their
+                signing day window — we’ll include a{' '}
+                <strong style={paragraphBold}>download link</strong> to your personalized video in
+                that email.
+              </span>
             </li>
           </ul>
           <hr style={hr} />
           <Text style={paragraph}>
-            If you have any questions, feel free to contact us at
+            If you have any questions, feel free to reach out to us at
             <br />
             <Link style={paragraphBold} href="mailto:support@playervault.io">
               support@playervault.io
