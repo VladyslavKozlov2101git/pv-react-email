@@ -33,7 +33,7 @@ export const PaymentIsProcessed = () => (
             your order has been successfully received! 🎉
           </Text>
           <Text style={paragraph}>
-            Order Number: <strong style={paragraphBold}>#FC-2024-001234</strong>
+            Order Number: <strong style={paragraphBold}>#PV-000123</strong>
             <br />
             Order Date: <strong style={paragraphBold}>Aug 1, 2025</strong>
           </Text>
@@ -64,7 +64,7 @@ export const PaymentIsProcessed = () => (
               </span>
               <span style={{ display: 'block', marginTop: '4px' }}>
                 Once your item has been sent, you can{' '}
-                <strong style={paragraphBold}>track its status</strong> anytime from your{' '}
+                <strong style={paragraphBold}>track its status</strong> anytime from <br /> your{' '}
                 <strong style={paragraphBold}>Order History</strong> page in your account settings.
               </span>
             </li>

@@ -7,12 +7,13 @@ const OrderSummary = () => {
       <table style={styles.table} cellPadding="0" cellSpacing="0" width="100%">
         <tbody>
           <tr>
-            <td>
+            <td style={{ verticalAlign: 'top' }}>
               <Text style={styles.mainTitle}>Standard Autograph:</Text>
               <Text style={styles.subTitle}>Keon Coleman</Text>
+              <Text style={styles.subTitle}>Item: Football Jersey, XS</Text>
             </td>
             <td align="right" style={styles.mainPrice}>
-              $299.00
+              $349.00
             </td>
           </tr>
         </tbody>
@@ -23,12 +24,6 @@ const OrderSummary = () => {
       <table style={styles.table} cellPadding="0" cellSpacing="0" width="100%">
         <tbody>
           <tr>
-            <td style={styles.itemLabel}>Item: Jersey</td>
-            <td align="right" style={styles.itemPrice}>
-              + $50.00
-            </td>
-          </tr>
-          <tr>
             <td style={styles.itemLabel}>Photo with Item</td>
             <td align="right" style={styles.itemPrice}>
               + $50.00
@@ -38,12 +33,6 @@ const OrderSummary = () => {
             <td style={styles.itemLabel}>JSA Authentication</td>
             <td align="right" style={styles.itemPrice}>
               + $20.00
-            </td>
-          </tr>
-          <tr>
-            <td style={styles.itemLabel}>Additional Insurance Coverage</td>
-            <td align="right" style={styles.itemPrice}>
-              + $15.00
             </td>
           </tr>
         </tbody>

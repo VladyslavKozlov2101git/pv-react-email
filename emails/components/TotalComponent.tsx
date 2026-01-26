@@ -7,17 +7,12 @@ const TotalComponent = () => {
       <div style={styles.sub_container}>
         <div style={styles.row}>
           <Text style={styles.label}>Subtotal</Text>
-          <Text style={styles.value}>$434.00</Text>
+          <Text style={styles.value}>$419.00</Text>
         </div>
 
         <div style={styles.row}>
-          <Text style={styles.label}>Shipping</Text>
-          <Text style={styles.value}>$9.99</Text>
-        </div>
-
-        <div style={styles.row}>
-          <Text style={styles.label}>Processing Fee</Text>
-          <Text style={styles.value}>$12.45</Text>
+          <Text style={styles.label}>Additional Insurance Coverage</Text>
+          <Text style={styles.value}>$12.00</Text>
         </div>
       </div>
 
@@ -25,7 +20,7 @@ const TotalComponent = () => {
 
       <div style={styles.row__footer}>
         <Text style={styles.totalLabel}>Total</Text>
-        <Text style={styles.totalValue}>$456.44</Text>
+        <Text style={styles.totalValue}>$431.00</Text>
       </div>
     </Section>
   );
@@ -33,7 +28,6 @@ const TotalComponent = () => {
 
 const styles = {
   sub_container: {
-    margin: '16px 0',
     display: 'table',
     width: '100%',
   },
@@ -41,9 +35,11 @@ const styles = {
     borderRadius: '24px',
     border: '1px solid var(--Border-Light, rgba(0, 0, 0, 0.08))',
     background: 'var(--Background-Light-Grey, #FAFAFB)',
-    fontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'",
+    fontFamily: "'Outfit', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'",
     width: '100%',
     margin: '0 0 24px 0',
+    padding: '23px 24px',
+    boxSizing: 'border-box' as const,
   },
   row: {
     display: 'table-row',
@@ -51,7 +47,7 @@ const styles = {
   row__footer: {
     display: 'table',
     width: '100%',
-    padding: '4px 20px 24px',
+    padding: '23px 0 0',
     boxSizing: 'border-box' as const,
   },
   label: {
@@ -63,7 +59,7 @@ const styles = {
     fontWeight: 400,
     lineHeight: '24px',
     letterSpacing: '-0.16px',
-    padding: '4px 20px',
+    padding: '4px 0px',
     textAlign: 'left' as const,
   },
   value: {
@@ -75,12 +71,12 @@ const styles = {
     fontWeight: 600,
     lineHeight: '24px',
     letterSpacing: '-0.16px',
-    padding: '4px 20px',
+    padding: '4px 0px',
     textAlign: 'right' as const,
   },
   hr: {
     borderColor: '#e6e6e6',
-    margin: '16px 0',
+    margin: '16px -24px 0',
   },
   totalLabel: {
     display: 'table-cell',
@@ -91,17 +87,20 @@ const styles = {
     fontWeight: 600,
     lineHeight: '24px',
     letterSpacing: '-0.16px',
-    padding: '4px 0px',
+    padding: '0px',
     textAlign: 'left' as const,
+    verticalAlign: 'middle' as const,
   },
   totalValue: {
     display: 'table-cell',
     fontSize: '28px',
     fontWeight: '700' as const,
+    lineHeight: '32px',
     color: '#111111',
     margin: 0,
-    padding: '4px 0px',
+    padding: '0px',
     textAlign: 'right' as const,
+    verticalAlign: 'middle' as const,
   },
 };
 
