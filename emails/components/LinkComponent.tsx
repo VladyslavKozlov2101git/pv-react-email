@@ -4,11 +4,12 @@ type Props = {
   text: string;
   href: string;
   type?: 'secondary' | 'primary';
+  small?: boolean;
 };
 
-const LinkComponent = ({ text, href, type = 'primary' }: Props) => {
+const LinkComponent = ({ text, href, type = 'primary', small = false }: Props) => {
   return (
-    <Section style={section}>
+    <Section style={small ? smallSection : section}>
       <Link href={href} style={link}>
         <Text style={type === 'primary' ? linkTextPrimary : linkTextSecondary}>{text}</Text>
       </Link>
@@ -24,6 +25,11 @@ const section = {
   width: '520px',
 };
 
+const smallSection = {
+  textAlign: 'center' as const,
+  margin: '0',
+  width: '480px',
+};
 const link = {
   textDecoration: 'none',
   display: 'inline-block',
