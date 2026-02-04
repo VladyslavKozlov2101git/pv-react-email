@@ -27,9 +27,9 @@ export const SendInShippingReminderFour = () => (
                 <Section style={content}>
                     <Text style={greeting}>👋 HI John,</Text>
                     <Text style={paragraph}>
-                        This is the final reminder regarding your <strong style={paragraphBold}>PlayerVault</strong> autograph order with <strong style={paragraphBold}>[Athlete_Name]</strong>.
+                        This is the final reminder regarding your <strong style={paragraphBold}>PlayerVault</strong> send-in autograph order with <strong style={paragraphBold}>[Athlete_Name]</strong>.
                     </Text>
-                    <Text style={paragraph}>We have not yet received confirmation that your send-in item has shipped, and the campaign’s send-in window is getting close to closing.</Text>
+                    <Text style={paragraph}>At this time, your item has not been marked as shipped, and we are approaching the end of the send-in window.</Text>
                     <FinalDetails />
                     <Text style={paragraph}>If you still want your item included in the signing, it must be shipped immediately.</Text>
                     <hr style={hr} />

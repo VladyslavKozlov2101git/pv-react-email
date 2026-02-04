@@ -34,7 +34,7 @@ export const SendInShippingReminderThree = () => (
                     <Text style={paragraph}>To ensure your item is signed, please ship it immediately using the prepaid label provided.</Text>
                     <hr style={hr} />
                     <Text style={paragraph}>If something is preventing you from shipping, let us know — we may be able to help, but timing is critical.</Text>
-                    <Text style={paragraph}>Best,</Text>
+                    <Text style={paragraph}>Thanks for your prompt attention,</Text>
                     <Text style={paragraphBold}>The PlayerVault Team</Text>
                 </Section>
                 <FooterComponent />

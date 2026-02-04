@@ -17,6 +17,7 @@ import {
 } from './components/styles';
 import LinkComponent from './components/LinkComponent';
 import BoxType from './components/BoxType';
+import PreferNotToPack from './components/PreferNotToPack';
 
 export const SeparateEmailWithShippingLabel = () => (
     <Html>
@@ -31,6 +32,7 @@ export const SeparateEmailWithShippingLabel = () => (
                         Great news — your <strong style={paragraphBold}>PlayerVault autograph order</strong> is ready for the next step!
                     </Text>
                     <Text style={paragraph}>Attached below is your <strong style={paragraphBold}>shipping label</strong> for your selected carrier: <strong style={paragraphBold}>[Carrier_Name]</strong>.</Text>
+                    <Text style={paragraph}>Please follow the instructions below carefully to ensure your item arrives safely and on time for your athlete’s signing day.</Text>
                     <BoxType />
                     <hr style={hr} />
                     <Text style={paragraph}><strong style={boldSubTitle}>What to Do Next:</strong></Text>
@@ -41,11 +43,12 @@ export const SeparateEmailWithShippingLabel = () => (
                         <li style={listItem}>Add protective wrapping as needed (bubble wrap, packing paper, etc.)</li>
                         <li style={listItem}>Include any notes only if instructed</li>
                     </ul>
+                    <PreferNotToPack />
                     <Text style={paragraph}><strong style={paragraphBold}>2. Ship your item:</strong></Text>
                     <ul style={list}>
                         <li style={listItem}>Use the attached <strong style={listTitle}>shipping label</strong></li>
                         <li style={listItem}>Drop off your package at any <strong style={listTitle}>[Carrier_Name]</strong> location</li>
-                        <li style={listItem}>Ship by: <strong style={listTitle}>[Carrier_Name]</strong> <br /> (to ensure arrival before signing day on <strong style={paragraphBold}>[Signing_Day_Date]</strong></li>
+                        <li style={listItem}>Ship by: <strong style={listTitle}>[Cutoff_Date]</strong> <br /> (to ensure arrival before signing day on <strong style={paragraphBold}>[Signing_Day_Date]</strong></li>
                     </ul>
                     <Text style={paragraph}><strong style={paragraphBold}>3. Track your order:</strong></Text>
                     <ul style={list}>
@@ -57,6 +60,7 @@ export const SeparateEmailWithShippingLabel = () => (
                     </ul>
                     <hr style={hr} />
                     <Text style={paragraph}>If you have any questions or need help with packaging, feel free to reach out at <strong style={listTitle}>support@playervault.io</strong></Text>
+                    <Text style={paragraph}>Thank you for being part of PlayerVault — we can’t wait for you to receive your signed item!</Text>
                     <Text style={paragraphBold}>The PlayerVault Team</Text>
                 </Section>
                 <FooterComponent />

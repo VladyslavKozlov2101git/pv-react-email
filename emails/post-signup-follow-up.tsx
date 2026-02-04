@@ -75,7 +75,7 @@ export const PostSignupFollowUp = () => (
                         <li style={listItem}><strong style={listTitle}>If you chose the send-in option:</strong> Use the prepaid shipping label we email you to send us your item. We’ll safely store it in our warehouse until signing day.</li>
                     </ul>
                     <hr style={hr} />
-                    <strong style={boldSubTitle}>What do I do after I check out?</strong>
+                    <strong style={boldSubTitle}>What is signing day?</strong>
                     <br />
                     <br />
                     <Text style={paragraph}>Signing day is the date selected by the athlete to fulfill all orders for their campaign. Athletes are extremely busy, so they choose a date that works for their schedule. When signing day arrives, we coordinate everything on our end to get orders completed.</Text>
@@ -89,7 +89,7 @@ export const PostSignupFollowUp = () => (
                     <strong style={boldSubTitle}>Can I authenticate the signatures?</strong>
                     <br />
                     <br />
-                    <Text style={paragraph}>Absolutely. We partner with <strong style={listTitle}>James Spence Authentication (JSA)</strong>, one of the most trusted authenticators in the memorabilia space. Authentication can be added as an optional add-on to any autograph order.</Text>
+                    <Text style={paragraph}>Absolutely. We partner with <span style={listTitle}>James Spence Authentication (JSA)</span>, one of the most trusted authenticators in the memorabilia space. Authentication can be added as an optional add-on to any autograph order.</Text>
                     <hr style={hr} />
                     <strong style={boldSubTitle}>When do I need to send my items in by?</strong>
                     <br />

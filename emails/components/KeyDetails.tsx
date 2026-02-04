@@ -25,7 +25,7 @@ const сontainer = {
     boxSizing: 'border-box' as const,
 };
 const list = {
-  padding: '0 0px 0px 16px',
+  padding: '0 16px 0px 16px',
 };
 
 const listItem = {

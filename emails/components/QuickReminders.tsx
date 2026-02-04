@@ -19,7 +19,7 @@ const сontainer = {
     borderRadius: '16px',
     border: '1px solid rgba(0, 0, 0, 0.08)',
     backgroundColor: '#FAFAFB',
-    padding: '16px 16px 0 16px',
+    padding: '16px 16px 0 20px',
     textAlign: 'left' as const,
     width: '520px',
     margin: '0 0 24px',

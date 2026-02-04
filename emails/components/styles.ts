@@ -40,7 +40,7 @@ export const paragraph = {
 export const paragraphBold = {
   ...paragraph,
   color: '#111',
-  fontWeight: 600,
+  fontWeight: 500,
   margin: '0',
 };
 
@@ -120,7 +120,7 @@ export const listTitle = {
   color: '#111',
   fontFamily: 'Outfit, sans-serif',
   fontSize: '16px',
-  fontWeight: 600,
+  fontWeight: 500,
   lineHeight: '24px',
   letterSpacing: '-0.16px',
   margin: '0 0 -16px 0',
@@ -131,7 +131,7 @@ export const listTitle2 = {
   color: '#111',
   fontFamily: 'Outfit, sans-serif',
   fontSize: '16px',
-  fontWeight: 600,
+  fontWeight: 500,
   lineHeight: '24px',
   letterSpacing: '-0.16px',
   margin: '0 0 4px 0',
