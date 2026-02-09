@@ -29,11 +29,14 @@ export const ManagerIsInvitedToAthletAcc = () => (
                     <Text style={paragraph}>
                         <strong style={paragraphBold}>[Athlete Name]</strong> has invited you to join their PlayerVault account to help manage campaigns and account activity.
                     </Text>
+                    <Text style={paragraph}>
+                        To get access and be able to collaborate on campaign setup, management, and execution on their behalf, you just need to accept the invitation:
+                    </Text>
                     <LinkComponent href="www.playervault.io" text="Accept invitation & Continue" />
                     <hr style={hr} />
                     <Text style={paragraph}>
                         If you have any questions or need assistance, feel free to reach out to us at
-                        <br /> at{' '}
+                        <br />{' '}
                         <Link style={paragraphBold} href="mailto:support@playervault.io">
                             support@playervault.io
                         </Link>
