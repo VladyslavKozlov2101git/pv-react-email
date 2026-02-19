@@ -16,7 +16,7 @@ const TotalComponent = () => {
         </div>
       </div>
 
-      <Hr style={styles.hr} />
+      <Hr style={{ ...styles.hr, margin: '16px 0px 0' }} />
 
       <div style={styles.row__footer}>
         <Text style={styles.totalLabel}>Total</Text>
