@@ -48,7 +48,7 @@ export const PostSignupFollowUp = () => (
           <Text style={paragraph}>PlayerVault currently offers:</Text>
           <ul style={list}>
             <li style={listTitle}>Autographs</li>
-            <li style={listTitle}>Custom video shoutouts</li>
+            <li style={{ ...listTitle, paddingTop: '8px' }}>Custom video shoutouts</li>
           </ul>
           <br />
           <Text style={paragraph}>

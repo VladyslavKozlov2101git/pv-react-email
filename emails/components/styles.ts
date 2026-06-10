@@ -6,7 +6,7 @@ export const main = {
 export const container = {
   margin: '40px auto',
   width: '600px',
-  maxWidth: '100% !important',
+  minWidth: '600px',
   backgroundColor: '#ffffff',
 };
 
