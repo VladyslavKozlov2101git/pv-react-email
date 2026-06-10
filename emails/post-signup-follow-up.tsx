@@ -11,7 +11,7 @@ import {
   main,
   boldSubTitle,
   paragraph,
-  paragraphBold,
+  paragraphBold2,
   listTitle,
   hr,
 } from './components/styles';
@@ -27,7 +27,7 @@ export const PostSignupFollowUp = () => (
         <Section style={content}>
           <Text style={greeting}>👋 HI John,</Text>
           <Text style={paragraph}>
-            Thanks for creating a <strong style={paragraphBold}>PlayerVault</strong> account! We
+            Thanks for creating a <strong style={paragraphBold2}>PlayerVault</strong> account! We
             wanted to check in and quickly walk you through how everything works so you’re ready to
             jump in when the right athlete or campaign catches your eye.
           </Text>
@@ -48,7 +48,6 @@ export const PostSignupFollowUp = () => (
           <Text style={paragraph}>PlayerVault currently offers:</Text>
           <ul style={list}>
             <li style={listTitle}>Autographs</li>
-            <br />
             <li style={listTitle}>Custom video shoutouts</li>
           </ul>
           <br />
@@ -155,7 +154,7 @@ export const PostSignupFollowUp = () => (
             If you ever have questions, just reply to this email — we’re happy to help.
           </Text>
           <Text style={paragraph}>Thanks for being part of PlayerVault,</Text>
-          <Text style={paragraphBold}>The PlayerVault Team</Text>
+          <Text style={paragraphBold2}>The PlayerVault Team</Text>
         </Section>
         <FooterComponent />
       </Container>
