@@ -36,11 +36,22 @@ export const paragraph = {
   letterSpacing: '-0.16px',
   margin: '0 0 16px',
 };
+export const paragraph2 = {
+  ...paragraph,
+  letterSpacing: '-0.24px',
+};
 
 export const paragraphBold = {
   ...paragraph,
   color: '#111',
   fontWeight: 500,
+  margin: '0',
+};
+export const paragraphBold2 = {
+  ...paragraph,
+  color: '#111',
+  fontWeight: 600,
+  letterSpacing: '-0.24px',
   margin: '0',
 };
 

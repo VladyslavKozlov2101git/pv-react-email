@@ -19,7 +19,7 @@ const сontainer = {
   padding: '23px 24px',
   textAlign: 'left' as const,
   width: '520px',
-  margin: '12px 0 16px',
+  margin: '12px 0 24px',
   boxSizing: 'border-box' as const,
 };
 

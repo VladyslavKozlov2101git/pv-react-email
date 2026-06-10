@@ -7,8 +7,8 @@ const ShipItem = () => {
         📦 Ship your item to the following address and make it out to us exactly as shown below:
       </Text>
       <Text style={paragraph}>
-        <strong style={paragraphBold}>PlayerVault Storage Facility</strong> <br /> 456 Busy Street{' '}
-        <br />
+        <strong style={{ ...paragraphBold, fontWeight: 500 }}>PlayerVault Storage Facility</strong>{' '}
+        <br /> 456 Busy Street <br />
         Buffalo, NY 14201, United States
       </Text>
       <Text style={paragraph}>
